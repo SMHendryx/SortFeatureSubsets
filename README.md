@@ -1,11 +1,11 @@
-# generatePowerSetConfigFiles
-Scala application that generates the power set of a set of strings and writes to application.conf files.  Useful for machine learning feature selection.
-
-Run with Scala Build Tool:
-
-sbt "run /path/to/complete/set/application.con /path/to/write/output/of/config/files"
-
-e.g.:
-
-sbt "run /Users/seanmhendryx/Research/context/configFiles/in/application.conf /Users/seanmhendryx/Research/context/configFiles/out"
 # SortFeatureSubsets
+Scala application that generates the power set of a set of strings and writes to application.conf files and sorts the subsets of features by a specified type of value (such as F1, precision, or recall in IR).  Useful for machine learning feature selection.
+
+Run with Scala Build Tool.
+
+To generate power set of config files:
+sbt "runMain GenConfigFiles /path/to/complete/set/application.conf /path/to/write/output/of/config/files"
+
+To sort the sets of features by a specified IR score:
+sbt "runMain SortByScore /path/to/dir/containing/serialized/input [Score type, e.g. F2] /where/to/save/output"
+
