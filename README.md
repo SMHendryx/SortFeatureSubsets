@@ -3,9 +3,11 @@ Scala application that generates the power set of a set of strings and writes to
 
 Run with Scala Build Tool.
 
-<br To generate power set of config files: />. 
+To generate power set of config files: 
+<br />. 
 sbt "runMain GenConfigFiles /path/to/complete/set/application.conf /path/to/write/output/of/config/files"
 
-<br To sort the sets of features by a specified IR score: />. 
+To sort the sets of features by a specified IR score:
+<br />. 
 sbt "runMain SortByScore /path/to/dir/containing/serialized/input [Score type, e.g. F2] /where/to/save/output"
 
