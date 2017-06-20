@@ -9,8 +9,8 @@ import java.io.File
 import scala.math.BigDecimal
 
 object ScoreExtractor{
-  def getScores(arguments:Array[String]) = {
-    //:Map[String, BigDecimal]
+  def getScores(arguments:Array[String]):Map[String, BigDecimal] = {
+    //
     // Gets the scores of specified type.  Function currently readys in args
     // Get the input directory containing the .ser files:
     val inputDirectory = arguments(0)
@@ -29,5 +29,17 @@ object ScoreExtractor{
       file => println(file.toString)
     }
     //println(files.mkString)
+
+    // Read in serilized files and extract score:
+    //Instatiate empty map: 
+    var subsetScoreMap = Map.empty[String, BigDecimal]
+    files.foreach {
+      file => 
+      val results = Serializer.load(file.toString)
+      // Extract feature families to be stored as the key of subsetScoreMap:
+      // I am here:
+
+      // Extract score:
+    }
   }
 }
