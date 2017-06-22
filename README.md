@@ -1,6 +1,8 @@
 # SortFeatureSubsets
 Scala application that generates the power set of a set of strings and writes to application.conf files and sorts the subsets of features by a specified type of value (such as F1, precision, or recall in IR).  Useful for machine learning feature selection.
 
+In current configuration, will not run.  Needs REACH dependencies.  Documented here for application to other problems.
+
 Run with Scala Build Tool.
 
 To generate power set of config files:  
