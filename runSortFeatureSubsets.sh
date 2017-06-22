@@ -1,4 +1,4 @@
-cd ~/githublocal/SortFeatureSubsets
+cd ~/githublocal/reach
 
 # first argument to Scala application is input directory (of .ser files), 
 #   second is score type to extract (of either 'F1', 'Precision', or 'Recall'),
